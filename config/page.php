@@ -15,16 +15,17 @@ return [
         "data" => [
             "baseTitle" => " | oophp",
             "bodyClass" => null,
-            "favicon" => "favicon.ico",
+            "favicon" => "img/minimalistic/favicon.ico",
             "htmlClass" => null,
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-                "css/dbwebb-se.min.css",
+                "css/minimalistic.min.css",
                 //"css/another.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
+                "js/main.js",
             ],
         ],
     ],
@@ -36,8 +37,8 @@ return [
             "template" => "anax/v2/header/site_logo",
             "data" => [
                 "class" => "large",
-                "siteLogo"      => "image/theme/leaf_256x256.png",
-                "siteLogoAlt"   => "Löv",
+                "siteLogo"      => "img/minimalistic/logo.png",
+                "siteLogoAlt"   => "logo",
             ],
         ],
         [
@@ -46,8 +47,6 @@ return [
             "data" => [
                 "homeLink"      => "",
                 "siteLogoText"  => "oophp",
-                "siteLogoTextIcon" => "image/theme/leaf_40x40.png",
-                "siteLogoTextIconAlt" => "Löv-bild",
             ],
         ],
         [
