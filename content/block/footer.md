@@ -1,1 +1,5 @@
-Copyright år och ditt namn samt diverse länkar som du finner relevanta.
+© 2020 Christoffer Lymalm
+
+Flashbild från rawpixel.com / Markus Spiske
+
+<a class="link-to-top-page" id="link-to-top-page" href="#"><strong>Upp</strong></a>

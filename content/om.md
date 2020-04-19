@@ -16,13 +16,13 @@ views:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+Om kursen oophp
 =========================
+På denna webbplats publicerar jag mina redovisningstexter för kursmomenten 
+i kursen oophp. 
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+<img src="" 
+        id = "about_img"
+        alt="Bild på programmeringskod">
 
-Skriv några kloka ord om kursen?
-
-Lägg till en fin och representativ bild för kursen, enligt ditt eget val.
-
-[FIGURE src=image/car.png?w=740&filter=grayscale&f1=colorize,0,30,0,0 caption="En fin bil som demobild, lite oklart hur den är representativ, men ändå..."]
+Bild från rawpixel.com / Markus Spiske

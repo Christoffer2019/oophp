@@ -1,3 +1,5 @@
-#### Footer col 1
+#### Länkar
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Kursen oophp på: [dbwebb](https://dbwebb.se/kurser/oophp-v5) | 
+[GitHub](https://github.com/dbwebb-se/oophp) | 
+Redovisa repo på: [GitHub](https://github.com/Christoffer2019/oophp)

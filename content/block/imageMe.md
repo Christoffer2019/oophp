@@ -1,0 +1,1 @@
+<img src="" id="me_presentation" class="me_presentation" alt="Image of Christoffer">  
