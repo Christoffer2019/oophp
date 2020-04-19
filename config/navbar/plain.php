@@ -11,7 +11,7 @@ return [
         [
             "text" => "Hem",
             "url" => "",
-            "title" => "Första sidan, börja här.",
+            "title" => "Presentation av Christoffer Lymalm.",
         ],
         [
             "text" => "Redovisning",
@@ -29,9 +29,19 @@ return [
             "title" => "Välj stylesheet.",
         ],
         [
-            "text" => "Verktyg",
-            "url" => "verktyg",
-            "title" => "Verktyg och möjligheter för utveckling.",
+            "text" => "Docs",
+            "url" => "dokumentation",
+            "title" => "Dokumentation av ramverk och liknande.",
+        ],
+        [
+            "text" => "Test &amp; Lek",
+            "url" => "lek",
+            "title" => "Testa och lek med test- och exempelprogram",
+        ],
+        [
+            "text" => "Anax dev",
+            "url" => "dev",
+            "title" => "Anax development utilities",
         ],
     ],
 ];
