@@ -1,0 +1,286 @@
+/**
+ * Layout for vertical grid
+ */
+
+ /**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+@logoColor: rgb(190, 190, 190);
+@logoHoverColor: white;
+@headerBgColor: rgb(43, 43, 43);
+
+@linkToTopBgColor: @headerBgColor;
+@linkToTopColor: @logoColor;
+@linkToTopHoverBgColor: @logoColor;
+@linkToTopHoverColor: @headerBgColor;
+
+@footerBgColor: @headerBgColor;
+@footerColor: @logoColor;
+@footerHoverColor: @logoHoverColor;
+
+@linkColor: @headerBgColor;
+@linkHoverColor: @logoColor;
+@linkHoverColor2: rgb(160, 160, 160);
+
+@width-1: 100%;
+
+@trans-dur: 0.3s;
+
+@padding-1: 1em;
+@padding-2: 0.7em;
+
+@margin-1: 2em;
+
+@window-width-2: 1050px;
+
+// Show the vertical grid
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    /* Don't forget to update width on vgrid in @media in 
+     * responsive-kmom03.less when changing width below.
+     */
+    #desinax-vgrid.showGrid(@gridImage, @window-width-2 - 20px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+/**
+ * General
+ */
+
+img {
+    display: block;
+    max-width: @width-1;
+}
+
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: @magicNumber;
+}
+
+.article {
+    word-wrap: break-word;
+}
+
+/**
+* Header
+*/
+
+.region-header-col-1,
+.region-header-col-2,
+.region-header-col-3,
+.region-header {
+    height: 2.45em;
+    background-color: @headerBgColor;
+    font-size: 1rem !important;
+}
+
+.region-header-col-1 {
+    display: inline-flex !important;
+}
+
+.site-logo-text a {
+    padding: @padding-1;
+    text-align: center;
+    background-color: @headerBgColor;
+    color: @logoColor;
+    display: inline-block;
+    height: 100%;
+    &:hover {
+        color: @logoHoverColor;
+    }
+}
+
+.site-logo img,
+.region-header-col-2 a {
+    height: 100%;
+}
+
+/**
+ * Media
+ */
+
+.right {
+     float: right;
+     margin-left: @margin-1;
+ }
+
+ figure {
+     max-width: @width-1 !important;
+     margin: 0 0 @magicNumber;
+ }
+
+ iframe {
+    max-width: @width-1 !important;
+ }
+
+ figure .asciinema iframe,
+ .figure-codepen iframe {
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+figure .asciinema,
+.figure-codepen {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+}
+
+/**
+ * Links
+ */
+
+a {
+    text-decoration: none;
+}
+
+.inner-wrap-main a {
+    color: @linkColor;
+    &:hover {
+        color: @linkHoverColor2;
+    }
+}
+
+.region-breadcrumb a {
+    width: 10em;
+}
+
+.inner-wrap-flash .row,
+.inner-wrap-breadcrumb .row,
+.route-om .outer-wrap-main .row {
+    width: @width-1;
+}
+
+.inner-wrap-flash .row,
+.inner-wrap-breadcrumb .row,
+.region-header-col-2,
+.region-header-col-3,
+.route-om .row,
+.route-om .region-header-col-1
+    {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.breadcrumb-list ul,
+.toc ul {
+    padding: 0;
+}
+
+.region-flash img,
+.site-logo img {
+    display: block; 
+} 
+
+.hljs {
+    overflow-x: auto;
+    font-size: 1em !important;
+}
+
+span {
+    font-size: 80%;
+}
+ 
+ /* navbars and links */
+
+ .next-previous,
+ .breadcrumb-list a,
+ .has-sidebar-right img,
+ .block .sidebar img,
+ .byline-image img,
+ .byline-image {
+     display: block;
+ }
+ 
+ .next-previous {
+     color: @linkColor;
+     margin-bottom: @magicNumber;
+     & a {
+         color: @linkColor;
+         &:hover {
+             color: @linkHoverColor;
+         }
+     }
+ }
+
+ .breadcrumb-list {
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        transition-duration: @trans-dur;
+        color: @linkColor;
+           &:hover {
+               color: @linkHoverColor;
+           }
+    }
+ }
+
+ .stylechooser {
+     overflow-x: auto;
+ }
+
+ img,
+ fieldset {
+     max-width: @width-1;
+ }
+ 
+ .author {
+     font-style: italic;    
+ }
+
+/**
+ * Link to top page
+ */
+
+.link-to-top-page {
+    display: none; // hide the button by default
+    text-decoration: none;
+    padding: @padding-2;
+    transition-duration: @trans-dur;
+    text-align: center;
+    background-color: @linkToTopBgColor;
+    color: @linkToTopColor;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1rem;
+
+    &:hover {
+        background-color: @linkToTopHoverBgColor;
+        color: @linkToTopHoverColor;
+    }
+}
+
+/**
+ * Footer
+ */
+
+.outer-wrap-footer {
+    background-color: @footerBgColor;
+}
+
+.footer-column a,
+ .inner-wrap-footer {
+    color: @footerColor;
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    margin-top: calc(@magicNumber - @fontSizeBody);
+}
+
+.footer-column a:hover {
+    color: @footerHoverColor !important;
+}
