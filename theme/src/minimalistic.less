@@ -34,6 +34,7 @@
  */
  @import "@desinax/typographic-grid/less/typography-font-families.less";
  @import "@desinax/typographic-grid/less/typography-defaults.less";
+ @import "layout/typography-minimalistic.less"; // My own typography style
 
 // Show the typographic grid
 .hgrid .inner-wrap {
@@ -67,10 +68,7 @@
   * and other regions of the page including route specific styles.
   */
 
- //@import "layout/layout_default.less";
- //@import "layout/responsive_default.less";
  @import "layout/responsive-minimalistic.less";
- //@import "layout/regions.less";     // To add style for ?regions
  
 
 /**
@@ -87,6 +85,12 @@
  /**
   * Navbar colors
   */
+
+// Window width for media queries
+@window-width-1: 640px;
+@window-width-2: 1050px;
+@window-width-3: 1320px;
+@window-width-4: 950px;
 
 // responsive-kmom03
 @desktopSubmenuHoverBgColor: @navbarItemHoverBgColor;
@@ -106,7 +110,7 @@
 // media-queries
 @desktopNavbarFontSize: 0.7em;
 @desktopNavbarPaddingTB: 1em;
-@desktopNavbarPaddingLR: 0.4em;
+@desktopNavbarPaddingLR: 0.5em;
 
 /**
  * Header

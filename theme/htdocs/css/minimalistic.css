@@ -1,5 +1,5 @@
 /*!
- * Minimalistic theme for kmom04.
+ * Minimalistic theme
  *
  * This stylesheet is for the design course and kmom01. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
@@ -4807,6 +4807,52 @@ template {
      * Enable all default typographic elements.
      */
 }
+/**
+ * My own typography style.
+ */
+/**
+  * Variables
+  */
+/**
+ * Forms
+ */
+button {
+  background-color: #2b2b2b;
+  color: #c3c3c3;
+  padding: 1em;
+  border: none;
+  font-weight: bold;
+}
+button:hover,
+button:active {
+  background-color: #023363;
+  color: white;
+}
+input {
+  padding: 1em 0.4em;
+  border: 1px solid #2b2b2b;
+}
+input:hover,
+input:active {
+  border: 1px solid #023363;
+  background-color: #023363;
+  color: white;
+}
+/**
+ * Alert text (for Guess Game)
+ */
+.red {
+  color: #b10808;
+}
+.blue {
+  color: #1c2969;
+}
+/**
+ * Font size
+ */
+.p {
+  font-size: 17px;
+}
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
 }
@@ -5400,7 +5446,7 @@ fieldset {
 /**
  * General layout
  */
-@media (min-width: 700px) {
+@media (min-width: 640px) {
   /**
      * Main
      */
@@ -5486,6 +5532,16 @@ fieldset {
     margin-left: 0.52083333%;
   }
   /**
+     * Forms
+     */
+  input {
+    width: 4em;
+  }
+  input,
+  button {
+    margin-bottom: 1px;
+  }
+  /**
      * Byline
      */
   .byline-image {
@@ -5551,7 +5607,7 @@ fieldset {
     max-width: 1030px;
   }
 }
-@media (max-width: 699px) {
+@media (max-width: 639px) {
   /**
      * General
      */
@@ -5597,8 +5653,18 @@ fieldset {
   .toc {
     display: none;
   }
+  /**
+     * Forms
+     */
+  button {
+    width: 100%;
+    border-top: 1px solid white;
+  }
+  input {
+    width: 100%;
+  }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1320px) {
   /**
      * Header
      */
@@ -5614,20 +5680,6 @@ fieldset {
   .site-logo-text a {
     font-size: 1rem;
     padding: 1em;
-  }
-  .region-header-col-3 {
-    display: inline;
-    float: left;
-    width: 19.79166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .region-header-col-2 {
-    display: inline;
-    float: left;
-    width: 57.29166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
   }
 }
 /**
@@ -5728,7 +5780,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-default ul li {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
-  width: 14.28%;
 }
 .rm-default ul ul {
   left: -9999px;
@@ -5742,9 +5793,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li {
   position: relative;
-  width: 14.28%;
   float: left;
-  border-left: 1px solid #ddd;
 }
 .rm-desktop li ul li {
   width: 100%;
@@ -5903,7 +5952,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * Example on media queries
   */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 639px) {
   .rm-small {
     display: block;
   }
@@ -5911,17 +5960,23 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     display: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 640px) {
   .rm-small {
     display: none;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1399px) {
+@media screen and (min-width: 950px) {
+  .rm-desktop li,
+  .rm-default ul li {
+    width: 12.5%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1319px) {
   /**
     * Menu layout for the desktop variant, usually full width of browser.
     */
   .rm-desktop li a {
-    padding: 1em 0.4em;
+    padding: 1em 0.5em;
     font-size: 0.7em;
   }
 }
