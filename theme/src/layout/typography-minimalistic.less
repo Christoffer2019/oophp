@@ -1,0 +1,71 @@
+/**
+ * My own typography style.
+ */
+
+
+
+ /**
+  * Variables
+  */
+@buttonBgColor: rgb(43, 43, 43);
+@buttonColor: rgb(195, 195, 195);
+@buttonHoverBgColor: #023363;
+@buttonHoverColor: white;
+@buttonPadding: 1em;
+@buttonBorder: none;
+
+@inputPadding: 1em 0.4em;
+@inputBorder: 1px solid rgb(43, 43, 43);
+@inputHoverBorder: 1px solid #023363;
+@inputHoverBgColor: #023363;
+@inputHoverColor: white;
+
+@alert-red: rgb(177, 8, 8);
+@alert-blue: rgb(28, 41, 105);
+
+@fontSizeBody: 17px;
+
+/**
+ * Forms
+ */
+button {
+    background-color: @buttonBgColor;
+    color: @buttonColor;
+    padding: @buttonPadding;
+    border: @buttonBorder;
+    font-weight: bold;
+    &:hover,
+    &:active {
+        background-color: @buttonHoverBgColor;
+        color: @buttonHoverColor;
+    }
+}
+
+input {
+    padding: @inputPadding;
+    border: @inputBorder;
+    &:hover,
+    &:active {
+        border: @inputHoverBorder;
+        background-color: @inputHoverBgColor;
+        color: @inputHoverColor;
+    }
+}
+
+/**
+ * Alert text (for Guess Game)
+ */
+.red {
+    color: @alert-red;
+}
+
+.blue {
+    color: @alert-blue;
+}
+
+/**
+ * Font size
+ */
+ .p {
+     font-size: @fontSizeBody;
+ }
