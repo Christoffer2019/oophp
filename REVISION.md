@@ -20,3 +20,16 @@ v1.0.0 (2020-04-19)
     * content
     * navbar in config/navbar/header.php, config/navbar/plain.php and config/navbar/responsive.php
     * links to favicon, JS and stylesheet in config/page.php
+
+v2.0.0 (2020-04-DD)
+-------------------
+
+* Added
+    * namespace "chly19" for php files.
+    * guess game link to navbar.
+    * guess game
+    * my own typography style for minimalistic theme.
+
+* Updated
+    * REVISION history
+    * some less and css files
