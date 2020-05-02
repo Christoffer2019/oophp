@@ -6080,7 +6080,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-default ul li {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
-  width: 14.28%;
 }
 .rm-default ul ul {
   left: -9999px;
@@ -6094,9 +6093,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li {
   position: relative;
-  width: 14.28%;
   float: left;
-  border-left: 1px solid #ddd;
 }
 .rm-desktop li ul li {
   width: 100%;
@@ -6255,7 +6252,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * Example on media queries
   */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 599px) {
   .rm-small {
     display: block;
   }
@@ -6263,12 +6260,18 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     display: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .rm-small {
     display: none;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1399px) {
+@media screen and (min-width: 950px) {
+  .rm-desktop li,
+  .rm-default ul li {
+    width: 12.5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1399px) {
   /**
     * Menu layout for the desktop variant, usually full width of browser.
     */
