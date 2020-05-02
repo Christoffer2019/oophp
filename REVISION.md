@@ -29,7 +29,11 @@ v2.0.0 (2020-04-DD)
     * guess game link to navbar.
     * guess game
     * my own typography style for minimalistic theme.
+    * Added php doc
 
 * Updated
     * REVISION history
     * some less and css files
+    * .gitignore
+    * .phpdoc.xml
+* Wrote report for kmom02
