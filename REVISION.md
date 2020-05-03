@@ -21,7 +21,7 @@ v1.0.0 (2020-04-19)
     * navbar in config/navbar/header.php, config/navbar/plain.php and config/navbar/responsive.php
     * links to favicon, JS and stylesheet in config/page.php
 
-v2.0.0 (2020-04-DD)
+v2.0.0 (2020-05-03)
 -------------------
 
 * Added
@@ -30,6 +30,7 @@ v2.0.0 (2020-04-DD)
     * guess game
     * my own typography style for minimalistic theme.
     * Added php doc
+    * date for writing report for kmom01
 
 * Updated
     * REVISION history
