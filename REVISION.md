@@ -31,6 +31,7 @@ v2.0.0 (2020-05-03)
     * my own typography style for minimalistic theme.
     * Added php doc
     * date for writing report for kmom01
+    * // @codingStandardsIgnoreFile in router/100_guess.php due to indentation error in phpcs. (When I tried to change indentation, I got indentation error from the validator "make test" instead. So I got error regardless of which validator I used.)
 
 * Updated
     * REVISION history
