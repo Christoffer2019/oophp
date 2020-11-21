@@ -39,3 +39,23 @@ v2.0.0 (2020-05-03)
     * .gitignore
     * .phpdoc.xml
 * Wrote report for kmom02
+
+v3.0.0 (2020-11-21)
+-------------------
+
+* Added
+    * link to Dice Game in menu
+    * main menu for games
+    * main page for games
+    * start page with game rules for dice game
+    * images for games
+    * classes (including test classes) for dice game
+    * debug, controller and view for dice game
+
+* Updated
+    * REVISION history
+    * style in CSS and LESS
+
+* Moved start page for guess game to the map content/games/guess-game
+* Wrote report for kmom03
+* Made example test class unexecutable
