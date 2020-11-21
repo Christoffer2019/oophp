@@ -1,19 +1,19 @@
 <?php
 
-namespace Anax;
+//namespace Anax;
 
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
 
 /**
  * Example test class.
  */
-class ExampleTest extends TestCase
-{
+//class ExampleTest extends TestCase
+//{
     /**
      * Just assert something is true.
      */
-    public function testTrue()
-    {
-        $this->assertTrue(true);
-    }
-}
+//    public function testTrue()
+//    {
+//        $this->assertTrue(true);
+//    }
+//}
