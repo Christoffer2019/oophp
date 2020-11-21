@@ -4734,42 +4734,42 @@ template {
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v12/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi5zfJs7.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v13/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi5zfJs7.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Pro';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v12/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZKWp8OA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v13/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZKWp8OA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v17/mem6YaGs126MiZpBA-UFUJ0e.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUJ0e.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKWiUOhs.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUOhs.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
 }
 /**
  * Import the typographic grid.
@@ -4816,6 +4816,10 @@ template {
 /**
  * Forms
  */
+.diceGame {
+  display: flex;
+  flex-direction: column;
+}
 button {
   background-color: #2b2b2b;
   color: #c3c3c3;
@@ -4835,17 +4839,31 @@ input {
 input:hover,
 input:active {
   border: 1px solid #023363;
-  background-color: #023363;
-  color: white;
+  color: #023363;
+}
+button,
+input,
+label {
+  margin-bottom: 0.4em;
+  margin-top: 0.4em;
 }
 /**
  * Alert text (for Guess Game)
  */
 .red {
-  color: #b10808;
+  color: #9e0000;
 }
 .blue {
   color: #1c2969;
+}
+.yellow {
+  color: #9c9a00;
+}
+.red-bg {
+  background-color: #9e0000;
+}
+.yellow-bg {
+  background-color: #9c9a00;
 }
 /**
  * Font size
@@ -5541,6 +5559,15 @@ fieldset {
   button {
     margin-bottom: 1px;
   }
+  #userName {
+    width: 12em;
+  }
+  #numberOfDices {
+    width: 3em;
+  }
+  #setNumberOfDices {
+    width: 12em;
+  }
   /**
      * Byline
      */
@@ -5660,7 +5687,9 @@ fieldset {
     width: 100%;
     border-top: 1px solid white;
   }
-  input {
+  input,
+  #userName,
+  #numberOfDices {
     width: 100%;
   }
 }

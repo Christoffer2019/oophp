@@ -17,17 +17,23 @@
 @inputPadding: 1em 0.4em;
 @inputBorder: 1px solid rgb(43, 43, 43);
 @inputHoverBorder: 1px solid #023363;
-@inputHoverBgColor: #023363;
-@inputHoverColor: white;
+@inputHoverColor: #023363;
 
-@alert-red: rgb(177, 8, 8);
+@alert-red: rgb(158, 0, 0);
 @alert-blue: rgb(28, 41, 105);
+@alert-yellow: rgb(156, 154, 0);
 
 @fontSizeBody: 17px;
 
 /**
  * Forms
  */
+
+.diceGame {
+    display: flex;
+    flex-direction: column;
+}
+
 button {
     background-color: @buttonBgColor;
     color: @buttonColor;
@@ -47,9 +53,15 @@ input {
     &:hover,
     &:active {
         border: @inputHoverBorder;
-        background-color: @inputHoverBgColor;
         color: @inputHoverColor;
     }
+}
+
+button,
+input,
+label {
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
 }
 
 /**
@@ -61,6 +73,18 @@ input {
 
 .blue {
     color: @alert-blue;
+}
+
+.yellow {
+    color: @alert-yellow;
+}
+
+.red-bg {
+    background-color: @alert-red;
+}
+
+.yellow-bg {
+    background-color: @alert-yellow;
 }
 
 /**
