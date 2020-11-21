@@ -44,9 +44,23 @@ return [
             "title" => "Anax development utilities",
         ],
         [
-            "text" => "Guess Game",
-            "url" => "guess-game",
-            "title" => "Spela gissa mitt nummer",
+            "text" => "Spel",
+            "url" => "games",
+            "title" => "Olika spel",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Guess Game",
+                        "url" => "games/guess-game",
+                        "title" => "Spela gissa mitt nummer",
+                    ],
+                    [
+                        "text" => "Dice Game",
+                        "url" => "games/dice-game",
+                        "title" => "Spela tärningsspel 100",
+                    ],
+                ],
+            ],
         ],
     ],
 ];
