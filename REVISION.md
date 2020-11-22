@@ -59,3 +59,11 @@ v3.0.0 (2020-11-21)
 * Moved start page for guess game to the map content/games/guess-game
 * Wrote report for kmom03
 * Made example test class unexecutable
+
+v3.0.1 (2020-11-22)
+-------------------
+
+* Added image of code coverage and UML diagram for classes in dice game
+* Updated .gitignore
+* Updated REVISION history
+
